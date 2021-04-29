@@ -199,13 +199,13 @@ For this test, using the proper useCase, the route must recieve the `admin` user
 For these tests, if an error has occurred in useCase, return a response with status `400` and a json with an object `{ error: "error message" }`, where the value of the `error` property should be the message thrown by the error in useCase.
 
 
-<br />
-<br />
+## 📝 License
 
-# 📝 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This project is under de MIT licence. Look at the file [LICENSE](./LICENSE) for more information.
+---
 
+Made with 💜 &nbsp;by Gustavo Henrique 👋 &nbsp;[See my linkedin](https://www.linkedin.com/in/gustavohribeiro/)
 
 
 
