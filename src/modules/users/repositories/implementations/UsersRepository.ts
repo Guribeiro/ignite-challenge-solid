@@ -31,7 +31,7 @@ class UsersRepository implements IUsersRepository {
     return UsersRepository.INSTANCE;
   }
 
-  create({ name, email }: ICreateUserDTO): User {
+  public create({ name, email }: ICreateUserDTO): User {
     const user = new User();
 
     Object.assign<User, IFakeCreateUserDTO>(user, {
@@ -41,6 +41,8 @@ class UsersRepository implements IUsersRepository {
       created_at: new Date(),
       updated_at: new Date(),
     });
+
+    this.users.push(user);
 
     return user;
   }
